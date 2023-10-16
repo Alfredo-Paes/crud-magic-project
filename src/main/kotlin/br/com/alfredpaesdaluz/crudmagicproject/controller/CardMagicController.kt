@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/card/v1")
-@Tag(name = "Cards", description = "Endpoints for Managing People")
+@Tag(name = "Cards", description = "Endpoints responsáveis para o cadastro, busca, busca indívidual e remoção de cartas.")
 
 class CardMagicController {
 
@@ -23,7 +23,7 @@ class CardMagicController {
     private lateinit var service: CardMagicService
 
     @GetMapping(produces = [MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML])
-    @Operation(summary = "Finds all Cards", description = "Finds all Cards",
+    @Operation(summary = "Finds all Cards", description = "Buscar todas as cartas",
         tags = ["Cards"],
         responses = [
             ApiResponse(
@@ -55,7 +55,7 @@ class CardMagicController {
     }
 
     @GetMapping(value = ["/{id}"], produces = [MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML])
-    @Operation(summary = "Finds a Card", description = "Finds a Card",
+    @Operation(summary = "Finds a Card", description = "Encontrar uma carta específica",
         tags = ["Cards"],
         responses = [
             ApiResponse(
@@ -89,7 +89,7 @@ class CardMagicController {
     @PostMapping(
         consumes = [MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML],
         produces = [MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML])
-    @Operation(summary = "Adds a new Card", description = "Adds a new Card",
+    @Operation(summary = "Adds a new Card", description = "Adicionar uma nova carta",
         tags = ["Cards"],
         responses = [
             ApiResponse(
@@ -117,7 +117,7 @@ class CardMagicController {
     @PutMapping(
         consumes = [MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML],
         produces = [MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML])
-    @Operation(summary = "Updates a card's information", description = "Updates a card's information",
+    @Operation(summary = "Updates a card's information", description = "Atualizar as informações de uma carta",
         tags = ["Cards"],
         responses = [
             ApiResponse(
@@ -152,7 +152,7 @@ class CardMagicController {
     @DeleteMapping(
         value = ["/{id}"],
         produces = [MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML, MediaType.APPLICATION_YML])
-    @Operation(summary = "Deletes a card", description = "Deletes a card",
+    @Operation(summary = "Deletes a card", description = "Remoção de uma carta.",
         tags = ["Cards"],
         responses = [
             ApiResponse(description = "No Content", responseCode = "204", content = [
