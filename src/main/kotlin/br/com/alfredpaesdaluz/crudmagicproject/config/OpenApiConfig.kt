@@ -13,7 +13,7 @@ class OpenApiConfig {
         return OpenAPI()
             .info(
                 Info()
-                    .title("RESTful API with Kotlin 1.8.22 and Spring Boot 3.1.4")
+                    .title("Crud-Magic-Project: RESTful API with Kotlin 1.8.22 and Spring Boot 3.1.4")
                     .version("v1")
                     .description("API responsável em realizar o registro de cartas do jogo Magic: The Gathering.")
                     .license(
