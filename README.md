@@ -18,10 +18,7 @@ A aplicação foi desenvolvida com a linguagem Kotlin e Spring Boot Framework. P
 - MySQL: https://www.mysql.com/
 - Flyway Maven Plugin: https://www.baeldung.com/database-migrations-with-flyway
 - Dozer: https://dozermapper.github.io/
-<<<<<<< HEAD
-=======
 - Swagger: https://swagger.io/
->>>>>>> 1ffc861 (doc: Criação do README da aplicação.)
 
 ## Instruções para usar a aplicação
 ### Docker MySQL
