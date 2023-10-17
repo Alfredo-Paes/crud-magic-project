@@ -53,11 +53,8 @@ Após seguir esses 6 passos, conecte ao gerenciador de banco de dados de sua pre
   ![Imagem 02 da aplicação](img/img02-jetbrain-run-app.png)
 - Para maiores informações sobre **IntelliJ IDEA**, acesse: https://www.jetbrains.com/pt-br/idea/
 
-<<<<<<< HEAD
-=======
 ### Acesso ao Swagger:
 - http://localhost:8080/swagger-ui/index.html
->>>>>>> 1ffc861 (doc: Criação do README da aplicação.)
 
 ## Imagens:
 ![Imagem 01 da aplicação](img/img01-swagger-screen.png)
